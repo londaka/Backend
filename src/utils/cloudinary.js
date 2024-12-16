@@ -3,6 +3,7 @@ import fs from 'fs'
 
 
     // Configuration
+
     cloudinary.config({ 
         cloud_name: 'process.env.CLOUDINARY_CLOUD_NAME', 
         api_key: 'process.env.CLOUDINARY_API_KEY',
@@ -11,6 +12,8 @@ import fs from 'fs'
       
     
     // Upload an image
+
+    
     const uploadOnCloudinary = async (localFilePath) => {
         try{
             if(!localFilePath) return null
